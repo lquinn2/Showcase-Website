@@ -1,0 +1,12 @@
+{
+  "name": "gradshowcasewebsite",
+  "version": "1.0.0",
+  "description": "North Island College's grad showcase website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss -o css"
+  },
+  "author": "Liam Quinn",
+  "license": "ISC"
+}

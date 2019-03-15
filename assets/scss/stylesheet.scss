@@ -1,0 +1,504 @@
+// Mixins
+@mixin spacer($height) {
+  height: $height;
+}
+
+
+// Variables
+$light-blue: #57bab9;
+$dark-blue: #19414c;
+$pink: #d93850;
+$yellow: #f1c244;
+$grey: #404c4c;
+$red: #cb252f;
+
+
+// Fonts
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/AvenirNext/AvenirNext-Regular-08.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Light;
+  src: url(../fonts/AvenirNext/AvenirNext-UltraLight-11.ttf);
+}
+
+@font-face {
+  font-family: Avenir-Bold;
+  src: url(../fonts/AvenirNext/AvenirNext-Bold-01.ttf);
+}
+@font-face {
+  font-family: Avenir-Semi-Bold;
+  src: url(../fonts/AvenirNext/AvenirNext-DemiBold-03.ttf);
+}
+
+@font-face {
+  font-family: Righteous;
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+
+.righteous {
+  font-family: Righteous, Helvetica, Arial, sans-serif;
+}
+
+.avenir {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.avenir-light {
+  font-family: Avenir-Light, Helvetica, Arial, sans-serif;
+}
+
+.avenir-semi-bold {
+  font-family: Avenir-Semi-Bold, Helvetica, Arial, sans-serif;
+}
+
+.avenir-bold {
+  font-family: Avenir-Bold, Helvetica, Arial, sans-serif;
+}
+
+
+// SCSS
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+}
+
+.bracket {
+  position: absolute;
+}
+
+.bracket-left {
+
+}
+
+.bracket-right {
+  
+}
+
+.container-anchor-right {
+  float: right;
+}
+
+.container-anchor-left {
+  float: left;
+}
+
+.container-angle-up {
+  clip-path: polygon(100% 0, 100% 80%, 0 95%, 0 15%);
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 0 95%, 0 15%);
+  height: 750px;
+}
+
+.container-angle-down {
+  -webkit-clip-path: polygon(0 0, 100% 30%, 100% 80%, 0 50%);
+  clip-path: polygon(0 0, 100% 30%, 100% 80%, 0 50%);
+  height: 1200px;
+}
+
+// Container Colors
+.container-dark-blue {
+  background-color: $dark-blue;
+}
+
+.container-light-blue {
+  background-color: $light-blue;
+}
+
+.container-red {
+  background-color: $red;
+}
+
+.container-yellow {
+  background-color: $yellow;
+}
+// End Container Colors
+
+.container-date {
+  height: 250px;
+  margin-top: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-date-day {
+  left: calc(100% / 2 - 142.5px);
+  height: 250px;
+  width: 255px;
+  position: absolute;
+}
+
+.container-date-details {
+  height: 50px;
+  width: 265px;
+  position: absolute;
+  top: 245px;
+  left: 8px;
+}
+
+.container-header { 
+  margin-top: 150px;
+  width: 700px;
+}
+
+.container-vertical {
+  border-left: 30px solid white;
+  border-right: 30px solid white;
+  height: 210vh;
+  left: 20%;
+  position: absolute;
+  top: 0px;
+  width: 30%;
+}
+
+.designers-and-developers {
+  letter-spacing: 7px;
+  left: 25px;
+  right: 0;
+  top: 1250px;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 4;
+
+  .text-subtitle {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-top: 0;
+  }
+}
+
+.nav-item {
+  color: white;
+  display: block;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $yellow;
+  }
+  
+}
+
+.side-nav {
+  left: 90px;
+  position: fixed;
+  top: calc(100vh / 2);
+  z-index: 1;
+}
+
+// Div Spacer Classes
+.spacer-50 {
+  @include spacer(50px);
+}
+
+.spacer-75 {
+  @include spacer(75px);
+}
+
+.spacer-100 {
+  @include spacer(100px);
+}
+
+.spacer-125 {
+  @include spacer(125px);
+}
+
+.spacer-150 {
+  @include spacer(150px);
+}
+
+.spacer-200 {
+  @include spacer(200px);
+}
+
+.spacer-250 {
+  @include spacer(250px);
+}
+// End Div Spacer Classes
+
+
+//// TEXT SCSS
+.text-anchor-right {
+  margin-right: 12%;
+  text-align: right;
+}
+
+.text-anchor-left {
+  margin-left: 75px;
+  text-align: left;
+}
+
+// Text Colors
+.text-dark-blue {
+  color: $dark-blue;
+}
+
+.text-light-blue {
+  color: $light-blue;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-yellow {
+  color: $yellow;
+}
+// End Text Colors
+
+// Text Weights
+.text-date {
+  font-size: 2em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.text-date-location {
+  bottom: 0px;
+  letter-spacing: 1.8px;
+  font-size: 0.625em;
+}
+
+.text-date-month {
+  letter-spacing: 7.5px;
+  left: 16px;
+  top: 20px;
+}
+
+.text-date-time {
+  font-size: 1.5em;
+  letter-spacing: 5.2px;
+  width: 102%;
+}
+
+.text-date-year {
+  letter-spacing: 20px;
+  top: 204px;
+  right: -35px;
+}
+
+.text-header {
+  font-size: 4.2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-transform: uppercase;
+}
+
+.text-header-super-2 {
+  font-size: 15em;
+  left: 0px;
+  letter-spacing: -30px;
+  position: absolute;
+  text-align: center;
+}
+
+.text-header-super-6 {
+  font-size: 15em;
+  letter-spacing: -30px;
+  position: absolute;
+  right: 0px;
+  top: -37.5px;
+  text-align: center;
+}
+
+.text-subtitle {
+  font-size: 1.625em;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+// End Text Weights
+//// END TEXT CSS
+
+
+//// MEDIA QUERIES
+// Desktop
+@media only screen and (max-width: 1750px) {
+  .container-header {
+    margin-top: calc(150px / 0.9);
+    width: 690px;
+    &::after {
+      content: "1";
+    }
+  }
+
+  .designers-and-developers {
+    font-size: 1em * 0.9;
+    letter-spacing: 4px;
+  }
+
+}
+
+@media only screen and (max-width: 1600px) {
+  .container-header {
+    width: 640px;
+    &::after {
+      content: "2";
+    }
+  }
+
+  .designers-and-developers {
+    left: 10px;
+    letter-spacing: 3.5px;
+  }
+  
+  .intro-text:nth-child(1) {
+    font-size: 1.625em * 0.9;
+  }
+
+  .intro-text:nth-child(2) {
+    font-size: 4.25em * 0.9;
+  }
+}
+
+@media only screen and (max-width: 1475px) {
+  .container-header {
+    margin-top: calc(150px / 0.75);
+    width: 590px;
+    &::after {
+      content: "3";
+    }
+  }
+  .designers-and-developers {
+    letter-spacing: 0px;
+
+    .text-subtitle {
+      letter-spacing: 0px;
+    }
+  }
+  
+  .intro-text:nth-child(1) {
+    font-size: 1.625em * 0.8;
+  }
+
+  .intro-text:nth-child(2) {
+    font-size: 4.25em * 0.8;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .container-header {
+    width: 520px;
+    &::after {
+      content: "4";
+    }
+  }
+
+  .designers-and-developers {
+    font-size: 1em * 0.75;
+    letter-spacing: 2px;
+  }
+
+  .intro-text:nth-child(1) {
+    font-size: 1.625em * 0.75;
+  }
+
+  .intro-text:nth-child(2) {
+    font-size: 4.25em * 0.75;
+  }
+}
+
+@media only screen and (max-width: 1290px) {
+  .container-header {
+    margin-top: calc(150px / 0.7);
+    width: 490px;
+    &::after {
+      content: "5";
+    }
+  }
+
+  .designers-and-developers {
+    font-size: 1em * 0.7;
+    letter-spacing: 2px;
+    top: calc(1250px / 0.975);
+  }
+
+  .intro-text:nth-child(1) {
+    font-size: 1.625em * 0.7;
+  }
+
+  .intro-text:nth-child(2) {
+    font-size: 4.25em * 0.7;
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  .container-header {
+    width: 450px;
+    &::after {
+      content: "6";
+    }
+  }
+
+  .designers-and-developers {
+    font-size: 1em * 0.65;
+  }
+
+  .intro-text:nth-child(1) {
+    font-size: 1.625em * 0.65;
+  }
+
+  .intro-text:nth-child(2) {
+    font-size: 4.25em * 0.65;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .container-header {
+    margin-top: calc(150px / 0.65);
+    width: 420px;
+    &::after {
+      content: "7";
+    }
+  }
+
+  .designers-and-developers {
+    font-size: 1em * 0.6;
+    top: calc(1250px / 0.965);
+  }
+  
+  .intro-text:nth-child(1) {
+    font-size: 1.625em * 0.6;
+  }
+
+  .intro-text:nth-child(2) {
+    font-size: 4.25em * 0.6;
+  }
+}
+// End Desktop
+
+// Tablet
+
+@media only screen and (max-width: 1000px) {
+  .container-header {
+    margin-top: calc(150px / 0.625);
+    width: 38%;
+    &::after {
+      content: "8";
+    }
+  }
+
+  .designers-and-developers {
+    font-size: 1em * 0.5;
+    left: 5px;
+  }
+  
+  .intro-text:nth-child(1) {
+    font-size: 1.625em * 0.5;
+  }
+
+  .intro-text:nth-child(2) {
+    font-size: 4.25em * 0.5;
+  }
+}
+// End Tablet
+// End Media Queries
