@@ -356,9 +356,24 @@ body {
     color: #f1c244; }
 
 .side-nav {
-  left: 90px;
+  left: 90px; }
+
+.side-nav-top {
+  opacity: 0;
   position: absolute;
   top: 480px;
+  z-index: 1; }
+
+.side-nav-middle {
+  opacity: 0;
+  position: absolute;
+  top: 1250px;
+  z-index: 1; }
+
+.side-nav-bottom {
+  opacity: 0;
+  position: absolute;
+  top: 2315px;
   z-index: 1; }
 
 .above-footer-caption {
