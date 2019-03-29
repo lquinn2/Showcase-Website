@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NIC Grad Showcase</title>
   <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
 </head>
 <body>
-  <nav class="side-nav righteous">
+  <nav class="side-nav righteous animate">
     <a class="nav-item" href="#">{} Home</a>
     <a class="nav-item" href="#">{} About</a>
     <a class="nav-item" href="#">{} Students</a>
   </nav>
   <div class="spacer-125"></div>
   <div class="container-angle-up container-light-blue">
-    <div class="container-anchor-right container-header text-white">
+    <div class="container-anchor-right container-header text-white animate-quick">
       <h2 class="text-subtitle text-anchor-right intro-text avenir-semi-bold">
         North Island College Interactive Media Presents
       </h2>
       <h1 class="text-header text-anchor-right intro-text righteous">
-        Stand up <span class="text-dark-blue">design</span>
-        and a whole load of <span class="text-dark-blue">code</span>
+        Stand up <span class="text-dark-blue">design</span> <br/>
+        and a whole <br/>
+        load of <span class="text-dark-blue">code</span>
       </h1>
     </div>
   </div>
@@ -34,22 +35,66 @@
         <h1 class="text-header text-header-super-6 righteous text-yellow">6</h1>
         <h2 class="text-date text-date-year righteous text-yellow">2019</h2>
         <div class="container-date-details">
-          <h3 class="text-date text-date-time avenir-light text-white">6:00pm - 9:00pm</h3>
+          <h3 class="text-date text-date-time avenir-light text-white">5:00pm - 9:00pm</h3>
           <h3 class="text-date text-date-location avenir-light text-white">Shadbolt 110, North Island College</h3>
         </div>
       </div>
     </div>
-    <div class="designers-and-developers righteous">
-        <h1 class="text-header text-white">Designers & Developers</h1>
-        <h2 class="text-subtitle text-white avenir-semi-bold">Meet the batch of 2019</h2>
+    <div class="designers-and-developers righteous animate-quick">
+        <h1 class="text-header text-white">Designers & <br/> Developers</h1>
+        <h2 id="first-break-point" class="text-subtitle text-white avenir-semi-bold">Meet the batch of 2019</h2>
       </div>
   </div>
   <div class="container-angle-down container-red">
-    <div class="container-anchor-right text-subtitle avenir">
-      <div class="bracket bracket-left">{</div>
-      <div class="bracket bracket-right">}</div>
+    <div class="container-anchor-right container-bracket-content text-subtitle avenir text-white animate">
+      <div class="bracket bracket-left avenir-light">{</div>
+      <div class="bracket-content avenir-semi-bold">
+        <div><span class="avenir-black">7</span> Developers</div>
+        <div id="designers-count"><span class="avenir-black">6</span> Designers</div>
+        <div id="showcases-count"><span class="avenir-black">13</span> Showcases</div>
+        <div class="bracket-content text-subtitle">Join us and watch <br/> us not screw up</div>
+      </div>
+      <div class="bracket bracket-right avenir-light">}</div>
     </div>
   </div>
-  
+  <div class="grid righteous text-dark-blue">
+    <div class="grid-item grid-item-1">Stand up</div>
+    <div class="grid-item grid-item-2"></div>
+    <div class="grid-item grid-item-3"></div>
+    <div class="grid-item grid-item-4">design</div>
+    <div class="grid-item grid-item-5"></div>
+    <div class="grid-item grid-item-6">and a</div>
+    <div class="grid-item grid-item-7"></div>
+    <div class="grid-item grid-item-8"></div>
+    <div class="grid-item grid-item-9"></div>
+    <div class="grid-item grid-item-10"></div>
+    <div class="grid-item grid-item-11">whole</div>
+    <div class="grid-item grid-item-12"></div>
+    <div class="grid-item grid-item-13">load of code</div>
+    <div class="grid-item grid-item-14"></div>
+    <div class="grid-item grid-item-15"></div>
+    <div class="grid-item grid-item-16"></div>
+    <div class="grid-item grid-item-17"></div>
+    <div class="grid-item grid-item-18"></div>
+    <div class="grid-item grid-item-19"></div>
+  </div>
+  <div class="above-footer-caption avenir-bold text-dark-blue">This site was made with HTML, CSS, and JavaScript.</div>
+  <footer class="righteous container-dark-blue">
+    <div class="text-white text-anchor-left">&copy; 2019 NIC Interactive Media</div>
+    <div class="flexbox container-anchor-right">
+      <a href="#" class="text-white flex-item flex-item-anchor-right">NIC Website</a>
+      <a href="#" class="text-white flex-item flex-item-anchor-right">IMG Website</a>
+      <a href="#" class="text-white flex-item flex-item-anchor-right">Facebook</a>
+      <a href="#" class="text-white flex-item flex-item-anchor-right">Vimeo</a>
+    </div>
+  </footer>
+  <!-- Logos -->
+  <img id="img-logo-top" class="animate-fade" src="assets/images/IMG Logo/Yellow.svg" alt="IMG Logo"/>
+  <img id="img-logo-middle" class="animate-fade" src="assets/images/IMG Logo/White.svg" alt="IMG Logo"/>
+  <img id="img-logo-bottom" class="animate-fade" src="assets/images/IMG Logo/Red.svg" alt="IMG Logo"/>
+  <!---->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/javascript/script.js"></script>
+<script src="assets/javascript/deactivate_zoom.js"></script>
 </html>
