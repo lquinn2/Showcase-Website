@@ -677,9 +677,15 @@ footer.mobile-footer {
   opacity: 0;
   position: absolute;
   top: 2019px;
-  left: 40px;
+  left: 70px;
   width: 125px; }
 
+@media only screen and (min-width: 2150px) {
+  .container-anchor-right.container-header {
+    right: 120px; }
+
+  .designers-and-developers {
+    left: 15%; } }
 @media only screen and (max-width: 1750px) {
   .container-header {
     margin-top: calc(150px / 0.9);
