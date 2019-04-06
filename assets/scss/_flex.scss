@@ -20,3 +20,16 @@ $yellow: #f1c244;
 .flex-item-anchor-right {
   justify-self: flex-end;
 }
+
+@media only screen and (max-width: 1155px) {
+  .flexbox {
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .flex-item-anchor-right {
+    margin-right: 0px;
+  }
+}
