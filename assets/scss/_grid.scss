@@ -14,13 +14,18 @@ $red: #cb252f;
   position: relative;
   height: auto;
   width: 67.5vw;
-  grid-template-columns: repeat(4, minmax(14rem, 275px));;
+  grid-template-columns: repeat(4, minmax(250px, 250px));;
   grid-auto-rows: 1fr;
   grid-gap: 10px;
 }
 
 .grid-mobile {
   display: none;
+}
+
+.grid-photo {
+  width: 100%;
+  height: 100%;
 }
 
 .grid::before {
@@ -32,6 +37,7 @@ $red: #cb252f;
 }
 
 .grid-item {
+  height: 250px;
   text-align: center;
   line-height: 250px;
   text-transform: uppercase;
@@ -170,11 +176,11 @@ $red: #cb252f;
 // Desktop
 @media only screen and (max-width: 1440px) {
   .grid {
-    grid-template-columns: repeat(4, minmax(12rem, 1fr));
+    grid-template-columns: repeat(4, minmax(240px, 240px));
   }
 
   .grid-item {
-    height: auto;
+    height: 240px;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -183,7 +189,7 @@ $red: #cb252f;
   }
 
   .grid-item {
-    height: 200px;
+    height: auto;
     font-size: 1.5em;
     line-height: 200px;
   }
