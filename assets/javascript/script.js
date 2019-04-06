@@ -98,3 +98,27 @@ $(window).scroll(function() {
     }
   }
 });
+
+// Mobile nav menu
+var hamburgerMenu = document.getElementById('hamburger-menu');
+var dropDownMenu = document.getElementById('menu-dropdown');
+var dropDownClose = document.getElementById('dropdown-close');
+var dropDownIsOpen = false;
+
+hamburgerMenu.addEventListener('click', function() {
+  if (dropDownIsOpen == false) {
+    dropDownMenu.style.top = "0vh";
+    dropDownIsOpen = true;
+  }
+});
+
+dropDownClose.addEventListener('click', function(){
+  if (dropDownIsOpen == true) {
+    dropDownMenu.style.top = "-100vh";
+    setTimeout(dropdown, 5);
+  }
+  function dropdown(){
+    dropDownIsOpen = false;
+  }
+});
+
