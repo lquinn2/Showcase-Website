@@ -185,18 +185,18 @@ $red: #cb252f;
 }
 @media only screen and (max-width: 1300px) {
   .grid {
-    grid-template-columns: repeat(4, minmax(8rem, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 200px));
   }
 
   .grid-item {
-    height: auto;
+    height: 200px;
     font-size: 1.5em;
     line-height: 200px;
   }
 }
 @media only screen and (max-width: 1100px) {
   .grid {
-    grid-template-columns: repeat(4, minmax(6rem, 175px));
+    grid-template-columns: repeat(4, minmax(175px, 175px));
   }
 
   .grid-item {
