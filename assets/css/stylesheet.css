@@ -222,15 +222,6 @@ html {
     line-height: 150px; } }
 @media only screen and (max-width: 620px) {
   .grid {
-    grid-template-columns: repeat(4, minmax(100px, 100px));
-    left: calc((100% - 430px) / 2); }
-
-  .grid-item {
-    height: 100px;
-    font-size: 1.1em;
-    line-height: 105px; } }
-@media only screen and (max-width: 500px) {
-  .grid {
     display: none; }
 
   .grid-mobile {
@@ -406,7 +397,8 @@ a {
 
 body {
   margin: 0px;
-  min-width: 320px; }
+  min-width: 320px;
+  overflow-x: hidden; }
 
 .bracket {
   position: absolute;
@@ -528,6 +520,9 @@ body {
 #mobile-designers-and-developers {
   display: none; }
 
+#dropdown-nav, #dropdown-footer {
+  display: none; }
+
 .nav-item {
   color: white;
   display: block;
@@ -629,7 +624,7 @@ footer.mobile-footer {
 .text-date-location {
   bottom: 0px;
   letter-spacing: 1.8px;
-  font-size: 0.625em; }
+  font-size: 0.615em; }
 
 .text-date-month {
   letter-spacing: 7.5px;
@@ -894,6 +889,7 @@ footer.mobile-footer {
 @media only screen and (max-width: 960px) {
   .top-nav {
     display: block;
+    position: sticky;
     background-color: #19414c;
     top: 0px;
     left: 0px;
@@ -928,11 +924,11 @@ footer.mobile-footer {
       transform: rotate(90deg); }
     .top-nav #menu-dropdown {
       background-color: #19414c;
-      position: absolute;
+      position: fixed;
       height: 100vh;
       top: -100vh;
       left: 0px;
-      width: 100%;
+      width: 100vw;
       z-index: 3; }
       .top-nav #menu-dropdown #dropdown-close {
         font-size: 3em;
@@ -941,25 +937,29 @@ footer.mobile-footer {
         right: 30px; }
       .top-nav #menu-dropdown #dropdown-img-logo {
         position: absolute;
-        top: 100px;
-        left: calc((100vw - 250px) / 2);
-        width: 250px; }
+        top: 50px;
+        left: calc((100vw - 180px) / 2);
+        width: 180px; }
       .top-nav #menu-dropdown .nav-item {
         color: white;
         display: block;
         font-size: 2em;
         letter-spacing: 2px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         text-transform: uppercase; }
         .top-nav #menu-dropdown .nav-item:hover {
           color: #f1c244; }
       .top-nav #menu-dropdown #dropdown-nav {
+        display: block;
         position: absolute;
-        top: 35vh;
-        left: calc((100vw - 210px) / 2); }
+        top: 29vh;
+        left: calc((100vw - 160px) / 2); }
+        .top-nav #menu-dropdown #dropdown-nav .nav-item {
+          font-size: 1.5em; }
       .top-nav #menu-dropdown #dropdown-footer {
+        display: block;
         position: absolute;
-        top: 62.5vh;
+        top: 51vh;
         left: calc((100vw - 180px) / 2); }
         .top-nav #menu-dropdown #dropdown-footer .nav-item {
           font-size: 1.5em;
@@ -968,7 +968,7 @@ footer.mobile-footer {
         position: absolute;
         font-size: 1.5em;
         letter-spacing: 0.26vw;
-        top: 85vh;
+        top: 74vh;
         left: calc((100% - 95vw) / 2);
         text-align: center;
         text-transform: uppercase;
@@ -1032,7 +1032,7 @@ footer.mobile-footer {
       width: 500px; }
     .container-header .text-header {
       margin: 0;
-      width: 500px; }
+      width: 507px; }
 
   .container-date {
     font-size: 1em;
@@ -1045,7 +1045,7 @@ footer.mobile-footer {
       .container-date .container-date-details .text-date-time {
         letter-spacing: 6.1px; }
       .container-date .container-date-details .text-date-location {
-        letter-spacing: 2.175px; }
+        letter-spacing: 1.75px; }
 
   .designers-and-developers {
     display: none; }
@@ -1103,7 +1103,7 @@ footer.mobile-footer {
 @media only screen and (max-width: 650px) {
   .container-angle-up .container-anchor-right {
     float: none;
-    margin-left: calc((100% - 430px) / 2);
+    margin-left: calc((100% - 438px) / 2);
     width: 430px; }
 
   .container-header {
@@ -1116,7 +1116,7 @@ footer.mobile-footer {
     .container-header .text-header {
       font-size: 1.8em;
       margin: 0;
-      width: 430px; }
+      width: 438px; }
 
   .container-bracket-content {
     right: calc((80% - 630px) / 2); } }
@@ -1144,18 +1144,18 @@ footer.mobile-footer {
     display: block; } }
 @media only screen and (max-width: 420px) {
   .container-angle-up .container-anchor-right {
-    margin-left: calc((100% - 260px) / 2);
-    width: 265px; }
+    margin-left: calc((100% - 277px) / 2);
+    width: 277px; }
 
   .container-header .text-subtitle {
     font-size: 0.475em;
     letter-spacing: 0.3px;
     margin-right: 5px;
-    width: 265px; }
+    width: 274px; }
   .container-header .text-header {
     text-align: right;
     font-size: 1em;
-    width: 265px; }
+    width: 277px; }
 
   .above-footer-caption {
     font-size: 1.5em; } }
@@ -1163,15 +1163,15 @@ footer.mobile-footer {
   .container-date {
     font-size: 0.9em; }
     .container-date .container-date-day .text-date-month {
-      left: 25px; }
+      left: 28.5px; }
     .container-date .container-date-day .text-header-super-2 {
       left: 15px; }
     .container-date .container-date-day .text-header-super-6 {
       right: 15px; }
     .container-date .container-date-day .text-date-year {
       letter-spacing: 18px;
-      top: 188px;
-      right: -20px; }
+      top: 183.5px;
+      right: -22px; }
     .container-date .container-date-details {
       top: 230px; }
       .container-date .container-date-details .text-date-time {
@@ -1179,7 +1179,7 @@ footer.mobile-footer {
         left: 10px; }
       .container-date .container-date-details .text-date-location {
         top: 30px;
-        letter-spacing: 1.95px;
+        letter-spacing: 1.5px;
         left: 10px; }
 
   .above-footer-caption {

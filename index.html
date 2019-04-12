@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="keywords" content="North Island College, Interactive Media, Grad, Grad Show 2019, Designers, Developers, Grad Showcase 2019, North Island College grad class, Interactive Media grad class, NIC designer developer showcase, Comox Valley, North Island College Comox Valley campus, Interactive Media Grad Show">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NIC Grad Showcase</title>
   <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138228227-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138228227-1');
+  </script>
 </head>
 <body>
   <nav class="top-nav animate">
@@ -19,38 +29,38 @@
       <div id="dropdown-close" class="avenir-bold">x</div>
       <img id="dropdown-img-logo" class="animate container-anchor-left" src="assets/images/IMG Logo/White.svg" alt="IMG Logo"/>
       <div id="dropdown-nav">
-        <a class="nav-item righteous" href="#">{} Home</a>
-        <a class="nav-item righteous" href="#">{} About</a>
-        <a class="nav-item righteous" href="#">{} Students</a>
+        <a class="nav-item righteous" href="#" onclick="hideDropdown()">{} Home</a>
+        <a class="nav-item righteous" href="#about" onclick="hideDropdown()">{} About</a>
+        <a class="nav-item righteous" href="#grid" onclick="hideDropdown()">{} Students</a>
       </div>
       <div id="dropdown-footer">
-        <a class="nav-item righteous" href="#">NIC Website</a>
-        <a class="nav-item righteous" href="#">IMG Website</a>
-        <a class="nav-item righteous" href="#">Facebook</a>
+        <a class="nav-item righteous" href="https://www.nic.bc.ca/">NIC Website</a>
+        <a class="nav-item righteous" href="http://nicinteractive.media/">IMG Website</a>
+        <a class="nav-item righteous" href="https://www.facebook.com/NICIMG/">Facebook</a>
       </div>
       <div id="dropdown-copyright" class="righteous animate-quick">&copy; 2019 NIC Interactive Media</div>
     </div>
   </nav>
   <nav class="side-nav side-nav-top righteous animate">
     <a class="nav-item" href="#">{} Home</a>
-    <a class="nav-item" href="#">{} About</a>
-    <a class="nav-item" href="#">{} Students</a>
+    <a class="nav-item" href="#second-spacer" onclick="checkScroll()">{} About</a>
+    <a class="nav-item" href="#img-logo-bottom">{} Students</a>
   </nav>
   <nav class="side-nav side-nav-middle righteous animate">
     <a class="nav-item" href="#">{} Home</a>
-    <a class="nav-item" href="#">{} About</a>
-    <a class="nav-item" href="#">{} Students</a>
+    <a class="nav-item" href="#second-spacer">{} About</a>
+    <a class="nav-item" href="#img-logo-bottom">{} Students</a>
   </nav>
   <nav class="side-nav side-nav-bottom righteous animate">
     <a class="nav-item text-dark-blue" href="#">{} Home</a>
-    <a class="nav-item text-dark-blue" href="#">{} About</a>
-    <a class="nav-item text-dark-blue" href="#">{} Students</a>
+    <a class="nav-item text-dark-blue" href="#second-spacer">{} About</a>
+    <a class="nav-item text-dark-blue" href="#img-logo-bottom">{} Students</a>
   </nav>
   <div id="first-spacer" class="spacer-125"></div>
   <div class="container-angle-up container-light-blue">
     <div class="container-anchor-right container-header text-white animate-quick">
       <h2 class="text-subtitle text-anchor-right intro-text avenir-semi-bold">
-        North Island College Interactive Media Presents
+        NIC Interactive Media Grad Show
       </h2>
       <h1 class="text-header text-anchor-right intro-text righteous">
         Stand up <span id="first-span" class="text-dark-blue">design</span><br/>
@@ -78,7 +88,7 @@
       <h2 id="first-break-point" class="text-subtitle text-white avenir-semi-bold">Meet the batch of 2019</h2>
     </div>
   </div>
-  <div class="container-angle-down container-red">
+  <div id="about" class="container-angle-down container-red">
     <div id="mobile-designers-and-developers" class="designers-and-developers righteous animate-quick">
       <h1 class="text-header text-white">Designers &<br/>Developers</h1>
       <h2 id="first-break-point" class="text-subtitle text-white avenir-semi-bold">Meet the batch of 2019</h2>
@@ -94,41 +104,41 @@
       <div class="bracket bracket-right avenir-light">}</div>
     </div>
   </div>
-  <div class="grid righteous text-dark-blue animate-instant">
+  <div id="grid" class="grid righteous text-dark-blue animate-instant">
     <div class="grid-item grid-item-1 animate-instant">Stand up</div>
-    <div class="grid-item grid-item-2 animate-instant"><img src="assets/images/grid-photos/Bilvi.jpg" class="grid-photo" alt="Bilvi's Photo"></div>
-    <div class="grid-item grid-item-3 animate-instant"><img src="assets/images/grid-photos/Jason.jpg" class="grid-photo" alt="Jason's Photo"></div>
+    <div class="grid-item grid-item-2 animate-instant"><a href="Bilvi.html"><img src="assets/images/grid-photos/Bilvi.jpg" class="grid-photo" alt="Bilvi's Photo"></a></div>
+    <div class="grid-item grid-item-3 animate-instant"><a href="Jason.html"><img src="assets/images/grid-photos/Jason.jpg" class="grid-photo" alt="Jason's Photo"></a></div>
     <div class="grid-item grid-item-4 animate-instant">design</div>
-    <div class="grid-item grid-item-5 animate-instant"><img src="assets/images/grid-photos/Rajneet.jpg" class="grid-photo" alt="Rajneet's Photo"></div>
+    <div class="grid-item grid-item-5 animate-instant"><a href="Rajneet.html"><img src="assets/images/grid-photos/Rajneet.jpg" class="grid-photo" alt="Rajneet's Photo"></a></div>
     <div class="grid-item grid-item-6 animate-instant">and a</div>
-    <div class="grid-item grid-item-7 animate-instant"><img src="assets/images/grid-photos/Alyssa.jpg" class="grid-photo" alt="Alyssa's Photo"></div>
-    <div class="grid-item grid-item-8 animate-instant"><a href="dale_profile.html"><img src="assets/images/grid-photos/Dale.jpg" class="grid-photo" alt="Dale's Photo"></a></div>
-    <div class="grid-item grid-item-9 animate-instant"><img src="assets/images/grid-photos/Liam.jpg" class="grid-photo" alt="Liam's Photo"></div>
-    <div class="grid-item grid-item-10 animate-instant"><img src="assets/images/grid-photos/Guri.jpg" class="grid-photo" alt="Guri's Photo"></div>
+    <div class="grid-item grid-item-7 animate-instant"><a href="Alyssa.html"><img src="assets/images/grid-photos/Alyssa.jpg" class="grid-photo" alt="Alyssa's Photo"></a></div>
+    <div class="grid-item grid-item-8 animate-instant"><a href="Dale.html"><img src="assets/images/grid-photos/Dale.jpg" class="grid-photo" alt="Dale's Photo"></a></div>
+    <div class="grid-item grid-item-9 animate-instant"><a href="Liam.html"><img src="assets/images/grid-photos/Liam.jpg" class="grid-photo" alt="Liam's Photo"></a></div>
+    <div class="grid-item grid-item-10 animate-instant"><a href="Guri.html"><img src="assets/images/grid-photos/Guri.jpg" class="grid-photo" alt="Guri's Photo"></a></div>
     <div class="grid-item grid-item-11 animate-instant">whole</div>
-    <div class="grid-item grid-item-12 animate-instant"><img src="assets/images/grid-photos/Kanchan.jpg" class="grid-photo" alt="Kanchan's Photo"></div>
+    <div class="grid-item grid-item-12 animate-instant"><a href="Kanchan.html"><img src="assets/images/grid-photos/Kanchan.jpg" class="grid-photo" alt="Kanchan's Photo"></a></div>
     <div class="grid-item grid-item-13 animate-instant">load of code</div>
-    <div class="grid-item grid-item-14 animate-instant"><img src="assets/images/grid-photos/Kulpreet.jpg" class="grid-photo" alt="Kulpreet's Photo"></div>
-    <div class="grid-item grid-item-15 animate-instant"><img src="assets/images/grid-photos/Michelle.jpg" class="grid-photo" alt="Michelle's Photo"></div>
-    <div class="grid-item grid-item-16 animate-instant"><img src="assets/images/grid-photos/Sarah.jpg" class="grid-photo" alt="Sarah's Photo"></div>
-    <div class="grid-item grid-item-17 animate-instant"><img src="assets/images/grid-photos/David.jpg" class="grid-photo" alt="David's Photo"></div>
-    <div class="grid-item grid-item-18 animate-instant"><img src="assets/images/grid-photos/Suvidha.jpg" class="grid-photo" alt="Suvidha's Photo"></div>
+    <div class="grid-item grid-item-14 animate-instant"><a href="Kulpreet.html"><img src="assets/images/grid-photos/Kulpreet.jpg" class="grid-photo" alt="Kulpreet's Photo"></a></div>
+    <div class="grid-item grid-item-15 animate-instant"><a href="Michelle.html"><img src="assets/images/grid-photos/Michelle.jpg" class="grid-photo" alt="Michelle's Photo"></a></div>
+    <div class="grid-item grid-item-16 animate-instant"><a href="Sarah.html"><img src="assets/images/grid-photos/Sarah.jpg" class="grid-photo" alt="Sarah's Photo"></a></div>
+    <div class="grid-item grid-item-17 animate-instant"><a href="David.html"><img src="assets/images/grid-photos/David.jpg" class="grid-photo" alt="David's Photo"></a></div>
+    <div class="grid-item grid-item-18 animate-instant"><a href="Suvidha.html"><img src="assets/images/grid-photos/Suvidha.jpg" class="grid-photo" alt="Suvidha's Photo"></a></div>
     <div class="grid-item grid-item-19 animate-instant"></div>
   </div>
-  <div class="grid-mobile righteous text-dark-blue animate-instant">
-    <div class="grid-item grid-item-1 animate-instant"><img src="assets/images/grid-photos/Bilvi.jpg" class="grid-photo" alt="Bilvi's Photo"></div>
-    <div class="grid-item grid-item-2 animate-instant"><img src="assets/images/grid-photos/Jason.jpg" class="grid-photo" alt="Jason's Photo"></div>
-    <div class="grid-item grid-item-3 animate-instant"><img src="assets/images/grid-photos/Alyssa.jpg" class="grid-photo" alt="Alyssa's Photo"></div>
-    <div class="grid-item grid-item-4 animate-instant"><img src="assets/images/grid-photos/Rajneet.jpg" class="grid-photo" alt="Rajneet's Photo"></div>
-    <div class="grid-item grid-item-5 animate-instant"><img src="assets/images/grid-photos/Dale.jpg" class="grid-photo" alt="Dale's Photo"></div>
-    <div class="grid-item grid-item-6 animate-instant"><img src="assets/images/grid-photos/Liam.jpg" class="grid-photo" alt="Liam's Photo"></div>
-    <div class="grid-item grid-item-7 animate-instant"><img src="assets/images/grid-photos/Kanchan.jpg" class="grid-photo" alt="Kanchan's Photo"></div>
-    <div class="grid-item grid-item-8 animate-instant"><img src="assets/images/grid-photos/Guri.jpg" class="grid-photo" alt="Guri's Photo"></div>
-    <div class="grid-item grid-item-9 animate-instant"><img src="assets/images/grid-photos/Michelle.jpg" class="grid-photo" alt="Michelle's Photo"></div>
-    <div class="grid-item grid-item-10 animate-instant"><img src="assets/images/grid-photos/Kulpreet.jpg" class="grid-photo" alt="Kulpreet's Photo"></div>
-    <div class="grid-item grid-item-11 animate-instant"><img src="assets/images/grid-photos/David.jpg" class="grid-photo" alt="David's Photo"></div>
-    <div class="grid-item grid-item-12 animate-instant"><img src="assets/images/grid-photos/Suvidha.jpg" class="grid-photo" alt="Suvidha's Photo"></div>
-    <div class="grid-item grid-item-13 animate-instant"><img src="assets/images/grid-photos/Sarah.jpg" class="grid-photo" alt="Sarah's Photo"></div>
+  <div id="grid" class="grid-mobile righteous text-dark-blue animate-instant">
+    <div class="grid-item grid-item-1 animate-instant"><a href="Bilvi.html"><img src="assets/images/grid-photos/Bilvi.jpg" class="grid-photo" alt="Bilvi's Photo"></a></div>
+    <div class="grid-item grid-item-2 animate-instant"><a href="Jason.html"><img src="assets/images/grid-photos/Jason.jpg" class="grid-photo" alt="Jason's Photo"></a></div>
+    <div class="grid-item grid-item-3 animate-instant"><a href="Alyssa.html"><img src="assets/images/grid-photos/Alyssa.jpg" class="grid-photo" alt="Alyssa's Photo"></a></div>
+    <div class="grid-item grid-item-4 animate-instant"><a href="Rajneet.html"><img src="assets/images/grid-photos/Rajneet.jpg" class="grid-photo" alt="Rajneet's Photo"></a></div>
+    <div class="grid-item grid-item-5 animate-instant"><a href="Dale.html"><img src="assets/images/grid-photos/Dale.jpg" class="grid-photo" alt="Dale's Photo"></a></div>
+    <div class="grid-item grid-item-6 animate-instant"><a href="Liam.html"><img src="assets/images/grid-photos/Liam.jpg" class="grid-photo" alt="Liam's Photo"></a></div>
+    <div class="grid-item grid-item-7 animate-instant"><a href="Kanchan.html"><img src="assets/images/grid-photos/Kanchan.jpg" class="grid-photo" alt="Kanchan's Photo"></a></div>
+    <div class="grid-item grid-item-8 animate-instant"><a href="Guri.html"><img src="assets/images/grid-photos/Guri.jpg" class="grid-photo" alt="Guri's Photo"></a></div>
+    <div class="grid-item grid-item-9 animate-instant"><a href="Michelle.html"><img src="assets/images/grid-photos/Michelle.jpg" class="grid-photo" alt="Michelle's Photo"></a></div>
+    <div class="grid-item grid-item-10 animate-instant"><a href="Kulpreet.html"><img src="assets/images/grid-photos/Kulpreet.jpg" class="grid-photo" alt="Kulpreet's Photo"></a></div>
+    <div class="grid-item grid-item-11 animate-instant"><a href="David.html"><img src="assets/images/grid-photos/David.jpg" class="grid-photo" alt="David's Photo"></a></div>
+    <div class="grid-item grid-item-12 animate-instant"><a href="Suvidha.html"><img src="assets/images/grid-photos/Suvidha.jpg" class="grid-photo" alt="Suvidha's Photo"></a></div>
+    <div class="grid-item grid-item-13 animate-instant"><a href="Sarah.html"><img src="assets/images/grid-photos/Sarah.jpg" class="grid-photo" alt="Sarah's Photo"></a></div>
   </div>
   <div id="third-spacer" class="spacer-125"></div>
   <div id="fourth-spacer" class="spacer-75"></div>

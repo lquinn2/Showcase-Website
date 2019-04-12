@@ -129,6 +129,7 @@ a {
 body {
   margin: 0px;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 .bracket {
@@ -277,6 +278,10 @@ body {
   display: none;
 }
 
+#dropdown-nav, #dropdown-footer {
+  display: none;
+}
+
 .nav-item {
   color: white;
   display: block;
@@ -412,7 +417,7 @@ footer.mobile-footer {
 .text-date-location {
   bottom: 0px;
   letter-spacing: 1.8px;
-  font-size: 0.625em;
+  font-size: 0.615em;
 }
 
 .text-date-month {
@@ -806,6 +811,7 @@ footer.mobile-footer {
 @media only screen and (max-width: 960px) {
   .top-nav {
     display: block;
+    position: sticky;
     background-color: $dark-blue;
     top: 0px;
     left: 0px;
@@ -845,11 +851,11 @@ footer.mobile-footer {
     }
     #menu-dropdown {
       background-color: $dark-blue;
-      position: absolute;
+      position: fixed;
       height: 100vh;
       top: -100vh;
       left: 0px;
-      width: 100%;
+      width: 100vw;
       z-index: 3;
       #dropdown-close {
         font-size: 3em;
@@ -859,16 +865,16 @@ footer.mobile-footer {
       }
       #dropdown-img-logo {
         position: absolute;
-        top: 100px;
-        left: calc((100vw - 250px) / 2);
-        width: 250px;
+        top: 50px;
+        left: calc((100vw - 180px) / 2);
+        width: 180px;
       }
       .nav-item {
         color: white;
         display: block;
         font-size: 2em;
         letter-spacing: 2px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         text-transform: uppercase;
 
         &:hover {
@@ -876,13 +882,18 @@ footer.mobile-footer {
         }
       }
       #dropdown-nav {
+        display: block;
         position: absolute;
-        top: 35vh;
-        left: calc((100vw - 210px) / 2);
+        top: 29vh;
+        left: calc((100vw - 160px) / 2);
+        .nav-item {
+          font-size: 1.5em;
+        }
       }
       #dropdown-footer {
+        display: block;
         position: absolute;
-        top: 62.5vh;
+        top: 51vh;
         left: calc((100vw - 180px) / 2);
         .nav-item {
           font-size: 1.5em;
@@ -893,7 +904,7 @@ footer.mobile-footer {
         position: absolute;
         font-size: 1.5em;
         letter-spacing: 0.26vw;
-        top: 85vh;
+        top: 74vh;
         left: calc((100% - 95vw) / 2);
         text-align: center;
         text-transform: uppercase;
@@ -969,7 +980,7 @@ footer.mobile-footer {
     }
     .text-header {
       margin: 0;
-      width: 500px;
+      width: 507px;
     }
   }
 
@@ -986,7 +997,7 @@ footer.mobile-footer {
         letter-spacing: 6.1px;
       }
       .text-date-location {
-        letter-spacing: 2.175px;
+        letter-spacing: 1.75px;
       }
     }
   }
@@ -1077,7 +1088,7 @@ footer.mobile-footer {
   .container-angle-up {
     .container-anchor-right {
       float: none;
-      margin-left: calc((100% - 430px) / 2);
+      margin-left: calc((100% - 438px) / 2);
       width: 430px;
     }
   }
@@ -1093,7 +1104,7 @@ footer.mobile-footer {
     .text-header {
       font-size: 1.8em;
       margin: 0;
-      width: 430px;
+      width: 438px;
     }
   }
   
@@ -1139,8 +1150,8 @@ footer.mobile-footer {
 @media only screen and (max-width: 420px) {
   .container-angle-up {
     .container-anchor-right {
-      margin-left: calc((100% - 260px) / 2);
-      width: 265px;
+      margin-left: calc((100% - 277px) / 2);
+      width: 277px;
     }
   }
 
@@ -1149,12 +1160,12 @@ footer.mobile-footer {
       font-size: 0.475em;
       letter-spacing: 0.3px;
       margin-right: 5px;
-      width: 265px;
+      width: 274px;
     }
     .text-header {
       text-align: right;
       font-size: 1em;
-      width: 265px;
+      width: 277px;
     }
   }
 
@@ -1168,7 +1179,7 @@ footer.mobile-footer {
     font-size: 0.9em;
     .container-date-day {
       .text-date-month {
-        left: 25px;
+        left: 28.5px;
       }
       .text-header-super-2 {
         left: 15px;
@@ -1178,8 +1189,8 @@ footer.mobile-footer {
       }
       .text-date-year {
         letter-spacing: 18px;
-        top: 188px;
-        right: -20px;
+        top: 183.5px;
+        right: -22px;
       }
     }
     .container-date-details {
@@ -1190,7 +1201,7 @@ footer.mobile-footer {
       }
       .text-date-location {
         top: 30px;
-        letter-spacing: 1.95px;
+        letter-spacing: 1.5px;
         left: 10px;
       }
     }

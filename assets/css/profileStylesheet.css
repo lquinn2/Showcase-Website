@@ -1,573 +1,666 @@
+body {
+  overflow-x: hidden;
+}
+
 .helvetica {
-    font-family: Helvetica, sans-serif;
-    font-weight: lighter;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 .container-more-angle-up {
-    -webkit-clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
-    clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
-    height: 1650px;
+  -webkit-clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+  clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+  height: 1650px;
 }
 
 .container-rect {
-    height: auto;
-    position: relative;
-    padding-bottom: 100px;
-    top: -1175px;
-    left: 30%;
-    width: 70%;
+  height: auto;
+  position: relative;
+  padding-bottom: 100px;
+  top: -1175px;
+  left: 30%;
+  width: 70%;
 }
 
 .text-anchor-center {
-    text-align: center;
+  text-align: center;
 }
 
 .blurb {
-    margin-left: 150px;
+  margin-left: 150px;
 }
 
 .text-name{
-    font-size: 71px ;
-    text-transform: uppercase;
-    white-space: nowrap;
-    letter-spacing: 3px;
+  font-size: 71px ;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 3px;
 }
 
-.logo-top{
-    position: absolute;
-    top: 75px;
-    font-size:  3.5em;
-    text-align: center;
-    left: 200px;
-    width: 200px;
-    height: auto;
+.mover{
+  position: absolute;
+  top: 80px;
+  font-size:  3.5em;
+  text-align: center;
+  left: 100px;
+  width: 200px;
+  height: auto;
 }
 
 #yellow-logo {
-    display: none;
+  display: none;
 }
 
 .close{
-    position: absolute;
-    top: 75px;
-    font-size:  3.5em;
-    text-align: center;
-    margin-left: 90%;
+  position: absolute;
+  top: 75px;
+  font-size:  3.5em;
+  text-align: center;
+  margin-left: 90%;
 }
 
 #student-photo{
-    position: absolute;
-    top: 375px;
-    width: 780px;
-    height: auto;
-    z-index: 2;
+  position: absolute;
+  top: 375px;
+  width: 780px;
+  height: auto;
+  z-index: 2;
 }
 
 .title{
-    position: relative !important;
-    margin-top: 75px;
-    margin-left: 250px;
-    padding-top: 75px;
-    letter-spacing: 0.2em;
+  position: relative !important;
+  margin-top: 75px;
+  margin-left: 250px;
+  padding-top: 75px;
+  letter-spacing: 0.2em;
 }
 
 .name {
-    position: absolute;
-    top: 380px;
-    left: 620px;
-    z-index: 3;
+  position: absolute;
+  top: 380px;
+  left: 620px;
+  z-index: 3;
 }
 
 .text-gray{
-    color: #404C4C;
+  color: #404C4C;
 }
 
 .text-header-more {
-    font-size: 2.8em;
-    margin-bottom: auto;
-    text-transform: uppercase;
-    white-space: nowrap;
+  font-size: 2.8em;
+  margin-bottom: auto;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 .write-up-size{
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 .tools-size{
-    font-size: 1em;
-    margin-top: 30px;
+  font-size: 1em;
+  margin-top: 30px;
 }
 
 .margin-for-write-up{
-    margin-top: 75px;
+  margin-top: 75px;
 }
 .para-size{
-    margin-bottom: auto;
-    margin-left: calc((100% - 350px) / 2);
-    width: 550px;
-    letter-spacing: 0.5px;
-    line-height: 1.75em;
+  margin-bottom: auto;
+  margin-left: calc((100% - 350px) / 2);
+  width: 550px;
+  letter-spacing: 0.5px;
+  line-height: 1.75em;
 }
 
 #my-project {
-    position: absolute;
-    font-size: 2em;
-    letter-spacing: 7.5px;
-    margin-right: 0px !important;
-    text-transform: uppercase;
-    top: 1650px;
-    left: 125px;
-    width: 300px;
+  position: absolute;
+  font-size: 2em;
+  letter-spacing: 7.5px;
+  margin-right: 0px !important;
+  text-transform: uppercase;
+  top: 1650px;
+  left: 125px;
+  width: 300px;
 }
 
 #my-project-header {
-    width: 500px;
+  width: 500px;
 }
 
 #my-project-bracket {
-    font-size: 11.75em;
-    transform: rotate(90deg);
-    margin-top: -150px;
-    margin-left: 125px;
+  font-size: 12.25em;
+  transform: rotate(90deg);
+  margin-top: -210px;
+  margin-left: 85px;
 }
 
 .project-intro {
-    position: absolute;
-    display: block;
-    font-size: 1.5em;
-    margin-left: calc((100vw - 1250px) / 2);
-    width: 1250px;
+  position: absolute;
+  display: block;
+  font-size: 1.5em;
+  margin-left: calc((100vw - 1250px) / 2);
+  width: 1250px;
 }
 
 .project-intro-left {
-    display: block;
-    float: left;
-    max-width: 40%;
-    width: auto;
-    margin-right: 30px;
+  display: block;
+  float: left;
+  max-width: 40%;
+  width: auto;
+  margin-right: 30px;
 }
 
 .project-intro-left h2{
-    display: block;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+  display: block;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 /* .project-intro-right {
-    display: block;
-    float: right;
-    font-size: 2em; 
-    letter-spacing: 7.5px;
-    text-transform: uppercase;
-    width: auto;
+  display: block;
+  float: right;
+  font-size: 2em; 
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+  width: auto;
 } */
 
 .project-intro-right img{
-    width: 700px;
-    height: auto;
+  width: 700px;
+  height: auto;
 }
 
 #third-spacer {
-    display: none;
+  display: none;
 }
 
 .project-section {
-    margin-top: -1000px;
+  margin-top: -1000px;
+}
+
+.project-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 45vw 45vw;
+  grid-template-columns: 45vw 45vw;
+  margin-left: calc(6.5vw / 2);
+  padding-top: 600px;
+}
+
+.project-grid-item {
+  height: auto;
+  width: 100%;
+}
+
+.project-grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.tools-size a {
+  color: #404c4c;
+}
+
+.tools-size .user-links {
+  font-style: italic;
+}
+
+.tools-size a:hover {
+  color: #19414c;
 }
 
 
 /* Media Queries */
 @media only screen and (max-width: 1700px) {
-    #my-project {
-        position: relative;
-        height: 0;
-        margin-top: -2800px;
-        margin-left: calc((100% - 600px) / 2);
-    }
+  #my-project {
+      position: relative;
+      height: 0;
+      margin-top: -2800px;
+      margin-left: calc((100% - 600px) / 2);
+  }
 
-    #my-project-bracket {
-        position: absolute;
-        top: 60px;
-        left: 22.5px;
-    }
-    
-    #third-spacer {
-        display: block;
-    }
-    .project-section {     
-        margin-top: 2000px;
-    }
+  #my-project-bracket {
+      position: absolute;
+      top: 50px;
+      left: 43.5px;
+  }
+  
+  #third-spacer {
+      display: block;
+  }
+  .project-section {     
+      margin-top: 2000px;
+  }
 }
 
 @media only screen and (max-width: 1450px) {
-    .container-more-angle-up {
-        height: 1600px;
-    }
+  .container-more-angle-up {
+      height: 1600px;
+  }
 
-    #student-photo {
-        width: 50vw;
-    }
+  #student-photo {
+      width: 50vw;
+  }
 
-    .name {
-        left: 38.5vw;
-    }
+  .name {
+      left: 38.5vw;
+  }
 
-    .container-rect {
-        top: -1025px;
-    }
+  .container-rect {
+      top: -1025px;
+  }
 
-    .container-rect:after {
-        content: " ";
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-    }
+  .container-rect:after {
+      content: " ";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+  }
 
-    .title {
-        float: right;
-        padding-top: 10px;
-        clear: both;
-        margin: 75px 40px 0 0;
-    }
-    .para-size {
-        float: right;
-        margin-right: 50px;
-    }
+  .title {
+      float: right;
+      padding-top: 10px;
+      clear: both;
+      margin: 75px 40px 0 0;
+  }
+  .para-size {
+      float: right;
+      margin-right: 50px;
+  }
 
-    #my-project {
-        position: relative;
-        height: 0;
-        margin-top: -2675px;
-    }
+  #my-project {
+      position: relative;
+      height: 0;
+      margin-top: -2675px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
-    .container-more-angle-up {
-        height: 1500px;
-    }
+  .container-more-angle-up {
+      height: 1500px;
+  }
 
-    #student-photo {
-        width: 45vw;
-    }
+  #student-photo {
+      width: 45vw;
+  }
 
-    .name {
-        left: 27vw;
-    }
+  .name {
+      left: 27vw;
+  }
 
-    .container-rect {
-        margin-top: 90px;
-    }
+  .container-rect {
+      margin-top: 90px;
+  }
 
-    .project-intro {
-        width: 1000px;
-        margin-left: calc((100% - 925px) / 2);
-    }
+  .project-intro {
+      width: 1000px;
+      margin-left: calc((100% - 925px) / 2);
+  }
 
-    .project-intro-left {
-        font-size: 0.8em;
-    }
+  .project-intro-left {
+      font-size: 0.8em;
+  }
 
-    .project-intro-right img {
-        width: 500px;
-    }
+  .project-intro-right img {
+      width: 500px;
+  }
+
+  .project-grid {   
+      padding-top: 450px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .container-more-angle-up {
-        -webkit-clip-path: polygon(0 40%, 100% 0, 100% 60%, 0% 100%);
-        clip-path: polygon(0 40%, 100% 0, 100% 60%, 0% 100%);
-        height: 1250px;
-    }
+  .container-more-angle-up {
+      -webkit-clip-path: polygon(0 40%, 100% 0, 100% 60%, 0% 100%);
+      clip-path: polygon(0 40%, 100% 0, 100% 60%, 0% 100%);
+      height: 1250px;
+  }
 
-    #student-photo {
-        width: 40vw;
-    }
+  #student-photo {
+      width: 40vw;
+  }
 
-    .container-rect {
-        margin-top: 290px;
-    }
+  .container-rect {
+      margin-top: 290px;
+  }
 }
 
-@media only screen and (max-width: 1100px) {
-    .container-more-angle-up {
-        -webkit-clip-path: polygon(0 45%, 100% 0, 100% 55%, 0% 100%);
-        clip-path: polygon(0 45%, 100% 0, 100% 55%, 0% 100%);
-        height: 1100px;
-    }
+@media only screen and (max-width: 1125px) {
+  .container-more-angle-up {
+      -webkit-clip-path: polygon(0 45%, 100% 0, 100% 55%, 0% 100%);
+      clip-path: polygon(0 45%, 100% 0, 100% 55%, 0% 100%);
+      height: 1100px;
+  }
 
-    #student-photo {
-        width: 35vw;
-    }
+  #student-photo {
+      width: 36vw;
+  }
 
-    .container-rect {
-        margin-top: 490px;
-    }
+  .container-rect {
+      margin-top: 490px;
+  }
+
+  .project-intro {
+      width: 91vw;
+  }
+
+  .project-intro-right {
+      width: 91vw;
+  }
+
+  .project-grid {   
+      padding-top: -0px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    html {
-        margin-top: -475px;
-    }
-    #gray-logo {
-        display: none;
-    }
-    #yellow-logo {
-        top: 20px;
-        left: 50px;
-        display: block;
-    }
+  html {
+      margin-top: -475px;
+  }
+  .mover {
+      top: 45px;
+      color: #f1c244;
+  }
+  .mover a {
+      color: #f1c244 !important;
+  }
+  .mover a:hover, .close:hover {
+      color: #19414c !important;
+  }
+  #gray-logo {
+      display: none;
+  }
+  #yellow-logo {
+      display: block;
+      top: 20px;
+      left: 50px;
+  }
 
-    #student-photo {
-        top: 180px;
-        width: 90vw;
-    }
+  .close {
+      color: #f1c244;
+      top: 40px;
+      right: 60px;
+  }
 
-    .container-more-angle-up {
-        -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
-        clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
-        position: absolute;
-        top: 400px;
-        width: 100%;
-        height: 130vw;
-        z-index: 1;
-    }
+  #student-photo {
+      top: 180px;
+      width: 90vw;
+  }
 
-    .name {
-        top: 135vw;
-        left: initial;
-        right: 125px;
-    }
+  .container-more-angle-up {
+      -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+      clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+      position: absolute;
+      top: 400px;
+      width: 100%;
+      height: 130vw;
+      z-index: 1;
+  }
 
-    .title {
-        position: relative;
-        float: right;
-        color: white;
-        z-index: 3;
-        top: 100px;
-        right: 100px;
+  .name {
+      top: 135vw;
+      left: initial;
+      right: 77.5px;
+  }
 
-    }
+  .title {
+      position: relative;
+      float: right;
+      color: white;
+      z-index: 3;
+      top: 100px;
+      right: 50px;
+  }
 
-    .container-rect {
-        padding: 180px 0 inherit 0;
-        top: 130vw;
-        left: 10vw;
-        width: 90vw;
-        right: 0px;
-    }
+  .container-rect {
+      padding: 180px 0 inherit 0;
+      top: 130vw;
+      left: 10vw;
+      width: 90vw;
+      margin-right: 100px;
+  }
 
-    .para-size {
-        margin-right: calc((88vw - 550px) / 2);
-    }
+  .para-size {
+      margin-right: calc((88vw - 550px) / 2);
+  }
 
-    .para-size:nth-child(2) {
-        margin-top: 250px;
-    }
+  .para-size:nth-child(2) {
+      margin-top: 250px;
+  }
 
-    .blurb {
-        margin-left: 0;
-    }
+  .blurb {
+      margin-left: 0;
+  }
 
-    #my-project {
-        position: relative;
-        margin-top: -320px;
-    }
+  #my-project {
+      position: relative;
+      margin-top: -320px;
+  }
 
-    #my-project-header {
-        position: absolute;
-        top: -50px;
-    }
+  #my-project-header {
+      position: absolute;
+      top: -50px;
+  }
 
-    .project-section {
-        position: relative;
-        margin-top: 1950px;
-    }
+  .project-section {
+      position: relative;
+      margin-top: 1950px;
+  }
 
-    .project-intro {
-        margin-left: calc(20% / 2);
-        width: 100vw;
-    }
+  .project-intro {
+      margin-left: calc(35% / 2);
+      width: 80.5vw;
+  }
 
-    .project-intro-left {
-        margin-right: 0px;
-        max-width: 80%;
-        text-align: center;
-    }
-    
-    .project-intro-right {
-        margin: 0px;
-        text-align: center;
-        width: 100vw;
-    }
+  .project-intro-left {
+      margin-right: 0px;
+      max-width: 80%;
+      text-align: center;
+  }
+  
+  .project-intro-right {
+      margin: 0px;
+      text-align: center;
+      width: 82vw;
+  }
 
-    .project-intro-right img {
-        margin-top: 25px;
-        margin-left: -200px;
-        width: 85%;
-    }
+  .project-intro-right img {
+      margin-top: 25px;
+      margin-left: -200px;
+      width: 85%;
+  }
+
+  .project-grid {
+      padding-top: 940px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    #my-project {
-        margin-top: -425px;
-    }
+  #my-project {
+      margin-top: -425px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .name {
-        top: 140vw;
-        left: initial;
-        right: 125px;
-    }
+  .name {
+      top: 140vw;
+      left: initial;
+      right: 60px;
+  }
 
-    .title {
-        position: relative;
-        font-size: 2em;
-        float: right;
-        color: white;
-        z-index: 3;
-        top: 115px;
-    }
+  .title {
+      position: relative;
+      font-size: 2em;
+      float: right;
+      color: white;
+      z-index: 3;
+      top: 115px;
+      right: 35px;
+  }
 
-    #my-project {
-        margin-top: -550px;
-    }
-    
-    .project-intro-right img {
-        margin-left: -150px;
-    }
+  #my-project {
+      margin-top: -550px;
+  }
+  
+  .project-intro-right img {
+      margin-left: -150px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    .name {
-        top: 145vw;
-        left: initial;
-        right: 125px;
-    }
+  .name {
+      top: 145vw;
+      left: initial;
+      right: 45px;
+  }
 
-    .title {
-        position: relative;
-        float: right;
-        color: white;
-        z-index: 3;
-        top: 140px;
-    }
+  .title {
+      position: relative;
+      float: right;
+      color: white;
+      z-index: 3;
+      top: 140px;
+      right: 20px;
+  }
 
-    .para-size {
-        margin-right: calc(10% / 2);
-        width: 80%;
-    }
+  .para-size {
+      margin-right: calc(10% / 2);
+      width: 80%;
+  }
 
-    #my-project {
-        margin-top: -700px;
-    }
+  #my-project {
+      margin-top: -700px;
+  }
+  
+  .project-grid {
+      padding-top: 775px;
+  }
+
+  .project-grid-item {
+      grid-template-rows: 42vw 42vw;
+      grid-template-columns: 42vw 42vw;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-    .name {
-        right: 25px;
-    }
+  .mover {
+    left: 50px;  
+  }
+  
+  .name {
+      right: 42.5px;
+  }
 
-    .text-name {
-        font-size: 3.5em;
-        margin-top: 80px;
-    }
+  .text-name {
+      font-size: 3.5em;
+      margin-top: 80px;
+  }
 
-    .title {
-        font-size: 1.75em;
-        top: 150px;
-        right: 0px;
-    }
+  .title {
+      font-size: 1.75em;
+      top: 150px;
+      right: 17.5px;
+  }
 
-    .para-size {
-        margin-right: calc(15% / 2);
-        width: 85%;
-    }
+  .para-size {
+      margin-right: calc(15% / 2);
+      width: 85%;
+  }
 
-    .para-size:nth-child(2) {
-        margin-top: 275px;
-    }
+  .para-size:nth-child(2) {
+      margin-top: 275px;
+  }
 
-    .project-intro-right img {
-        margin-left: -115px;
-    }
+  .project-intro-right img {
+      margin-left: -115px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    #my-project {
-        margin-top: -825px;
-    }
+  #my-project {
+      margin-top: -825px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    #my-project {
-        margin-top: -900px;
-    }
+  #my-project {
+      margin-top: -900px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .title {
-        font-size: 1.75em;
-        top: 135px;
-        right: 0px;
-    }
-    
-    .project-intro-right img {
-        margin-left: -90px;
-    }
+  .name {
+    right: 27.5px;
+  }
+
+  .title {
+      font-size: 1.75em;
+      top: 135px;
+      right: 3px;
+  }
+  
+  .project-intro-right img {
+      margin-left: -90px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .name {
-        right: 25px;
-    }
+  .mover {
+    left: 0px;  
+  }
+  .name {
+      right: 33.5px;
+  }
 
-    .text-name {
-        font-size: 3em;
-        margin-top: 80px;
-    }
-    
-    .title {
-        font-size: 1.5em;
-        top: 115px;
-        right: 0px;
-    }
-    #my-project {
-        margin-top: -1000px;
-    }
+  .text-name {
+      padding-top: 25px;
+      font-size: 2em;
+      margin-top: 80px;
+  }
+  
+  .title {
+      font-size: 1.1em;
+      top: 120px;
+      right: 11px;
+  }
+
+  #my-project {
+      margin-top: -1000px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    #my-project {
-        font-size: 1.5em;
-        margin-top: -1100px;
-        margin-left: calc((100% - 525px) / 2);
-    }
+  #my-project {
+      font-size: 1.5em;
+      margin-top: -1100px;
+      margin-left: calc((100% - 535px) / 2);
+  }
 
-    #my-project-bracket {
-        font-size: 12.2em;
-        top: 65px;
-        left: -10px;
-    }
+  #my-project-bracket {
+      font-size: 12.5em;
+      top: 65px;
+      left: 20px;
+  }
 
-    .project-section {
-        margin-top: 1825px;
-    }
+  .project-section {
+      margin-top: 1825px;
+  }
 
-    .project-intro-right img {
-        margin-left: -65px;
-    }
+  .project-intro-right img {
+      margin-left: -65px;
+  }
 }
 
 @media only screen and (max-width: 350px) {
-    #my-project {
-        font-size: 1.5em;
-        margin-top: -1150px;
-        margin-left: calc((100% - 535px) / 2);
-    }
+  #my-project {
+      font-size: 1.5em;
+      margin-top: -1150px;
+      margin-left: calc((100% - 535px) / 2);
+  }
 
-    #my-project-bracket {
-        font-size: 12.2em;
-        top: 65px;
-        left: -10px;
-    }
+  #my-project-bracket {
+      font-size: 12.2em;
+      top: 65px;
+  }
 }
