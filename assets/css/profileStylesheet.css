@@ -73,6 +73,7 @@ body {
   margin-left: 250px;
   padding-top: 75px;
   letter-spacing: 0.2em;
+  word-wrap: wrap !important;
 }
 
 .name {
