@@ -6,35 +6,80 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
- 
+
 <url>
-  <loc>http://lquinn.imgd.ca/GradShowcaseWebsite/</loc>
-  <lastmod>2019-04-11T21:09:37+00:00</lastmod>
+  <loc>https://interactivemedia.show/#</loc>
+  <lastmod>2019-04-16T03:08:02+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://lquinn.imgd.ca/GradShowcaseWebsite/Rajneet.html</loc>
-  <lastmod>2019-04-12T01:00:29+00:00</lastmod>
+  <loc>https://interactivemedia.show/Bilvi.html</loc>
+  <lastmod>2019-04-16T02:09:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://lquinn.imgd.ca/GradShowcaseWebsite/Alyssa.html</loc>
-  <lastmod>2019-04-12T01:02:43+00:00</lastmod>
+  <loc>https://interactivemedia.show/Jason.html</loc>
+  <lastmod>2019-04-16T03:01:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://lquinn.imgd.ca/GradShowcaseWebsite/Dale.html</loc>
-  <lastmod>2019-04-12T01:02:35+00:00</lastmod>
+  <loc>https://interactivemedia.show/Rajneet.html</loc>
+  <lastmod>2019-04-16T03:28:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://lquinn.imgd.ca/GradShowcaseWebsite/Liam.html</loc>
-  <lastmod>2019-04-12T00:35:35+00:00</lastmod>
+  <loc>https://interactivemedia.show/Alyssa.html</loc>
+  <lastmod>2019-04-16T02:09:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://lquinn.imgd.ca/GradShowcaseWebsite/index.html</loc>
-  <lastmod>2019-04-11T21:09:37+00:00</lastmod>
+  <loc>https://interactivemedia.show/Dale.html</loc>
+  <lastmod>2019-04-16T02:59:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/Liam.html</loc>
+  <lastmod>2019-04-16T02:09:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/Guri.html</loc>
+  <lastmod>2019-04-16T03:01:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/Kanchan.html</loc>
+  <lastmod>2019-04-16T02:09:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/Kulpreet.html</loc>
+  <lastmod>2019-04-16T03:23:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/Michelle.html</loc>
+  <lastmod>2019-04-16T03:01:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/Sarah.html</loc>
+  <lastmod>2019-04-16T03:01:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/David.html</loc>
+  <lastmod>2019-04-16T02:09:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/Suvidha.html</loc>
+  <lastmod>2019-04-16T03:07:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://interactivemedia.show/index.html</loc>
+  <lastmod>2019-04-16T03:08:02+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
