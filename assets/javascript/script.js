@@ -10,7 +10,7 @@ var secondActivatePointActivated = false;
 var sideNav = document.getElementsByClassName('side-nav')[0];
 
 
-// Inital logo fade in on page load
+// Initial logo fade in on page load
 $('#img-logo-top').css('opacity', '1');
 $('#img-logo-bottom').css('opacity', '0');
 $('#img-logo-middle').css('opacity', '0');
@@ -137,7 +137,7 @@ dropDownClose.addEventListener('click', function(){
     setTimeout(dropdown, 5);
     body.style.position = "initial";
     body.style.overflowX = "initial";
-    body.style.width = "inital";
+    body.style.width = "initial";
     
     window.removeEventListener("scroll", preventMotion);
     window.removeEventListener("touchmove", preventMotion);
@@ -156,34 +156,24 @@ function hideDropdown() {
     
     body.style.position = "initial";
     body.style.overflowX = "initial";
-    body.style.width = "inital";
+    body.style.width = "initial";
     
     window.removeEventListener("scroll", preventMotion);
     window.removeEventListener("touchmove", preventMotion);
-    
-    console.log(this.location.href);
-    switch(this.location.href) {
-      case 'http://lquinn.imgd.ca/GradShowcaseWebsite/#':
+
+    var hash = $(location).attr('hash');
+    //console.log(hash);
+    switch(hash) {
+      case '#top':
         document.getElementById('first-spacer').scrollIntoView(true);
         break;
-      case 'http://lquinn.imgd.ca/GradShowcaseWebsite/#about':
+      case '#about':
         document.getElementById('about').scrollIntoView(true);
         break;
-      case 'http://lquinn.imgd.ca/GradShowcaseWebsite/#grid':
+      case '#grid':
         document.getElementById('grid').scrollIntoView(true);
-        document.getElementsByClassName('grid-mobile')[0].scrollIntoView(true);
+        document.getElementById('grid-desktop').scrollIntoView(true);
         break;
-      case 'http://lquinn.imgd.ca/GradShowcaseWebsite/index.html#':
-        document.getElementById('first-spacer').scrollIntoView(true);
-        break;
-      case 'http://lquinn.imgd.ca/GradShowcaseWebsite/index.html#about':
-        document.getElementById('about').scrollIntoView(true);
-        break;
-      case 'http://lquinn.imgd.ca/GradShowcaseWebsite/index.html#grid':
-        document.getElementById('grid').scrollIntoView(true);
-        document.getElementsByClassName('grid-mobile')[0].scrollIntoView(true);
-        break;
-      
     }
   }
 }
