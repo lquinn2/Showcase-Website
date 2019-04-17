@@ -1000,10 +1000,10 @@ footer.mobile-footer {
     .container-date-details {
       width: 280px;
       .text-date-time {
-        letter-spacing: 4.95px;
+        letter-spacing: 4.65px;
       }
       .text-date-location {
-        letter-spacing: 1.75px;
+        letter-spacing: 1.5px;
       }
     }
   }
@@ -1175,6 +1175,14 @@ footer.mobile-footer {
     }
   }
 
+  .container-date-details {
+    top: 250px;
+    left: 12.5px;
+    .text-date-location {
+      letter-spacing: 1px !important;     
+    }
+  }
+
   .above-footer-caption {
     font-size: 1.5em;
   }
@@ -1202,12 +1210,10 @@ footer.mobile-footer {
     .container-date-details {
       top: 230px;
       .text-date-time {
-        letter-spacing: 4.2px;
         left: 10px;
       }
       .text-date-location {
         top: 30px;
-        letter-spacing: 1.5px;
         left: 10px;
       }
     }

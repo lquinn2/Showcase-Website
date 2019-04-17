@@ -1046,9 +1046,9 @@ footer.mobile-footer {
     .container-date .container-date-details {
       width: 280px; }
       .container-date .container-date-details .text-date-time {
-        letter-spacing: 4.95px; }
+        letter-spacing: 4.65px; }
       .container-date .container-date-details .text-date-location {
-        letter-spacing: 1.75px; }
+        letter-spacing: 1.5px; }
 
   .designers-and-developers {
     display: none; }
@@ -1160,6 +1160,12 @@ footer.mobile-footer {
     font-size: 1em;
     width: 277px; }
 
+  .container-date-details {
+    top: 250px;
+    left: 12.5px; }
+    .container-date-details .text-date-location {
+      letter-spacing: 1px !important; }
+
   .above-footer-caption {
     font-size: 1.5em; } }
 @media only screen and (max-width: 380px) {
@@ -1178,11 +1184,9 @@ footer.mobile-footer {
     .container-date .container-date-details {
       top: 230px; }
       .container-date .container-date-details .text-date-time {
-        letter-spacing: 4.2px;
         left: 10px; }
       .container-date .container-date-details .text-date-location {
         top: 30px;
-        letter-spacing: 1.5px;
         left: 10px; }
 
   .above-footer-caption {
