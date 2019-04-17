@@ -11,7 +11,7 @@
   <link rel="shortcut icon" type="image/png" href="assets/favicon/favicon.png"/>
   <style>
     .project-grid {
-      padding-top: 650px;
+      padding-top: 400px;
     }
 
     .text-name {
@@ -20,13 +20,16 @@
     
     @media only screen and (max-width: 1125px) {
       .project-grid {
-        padding-top: 400px;
+        padding-top: 0px;
       }
     }
 
     @media only screen and (max-width: 1000px) {
+      .project-intro-right {
+        margin-left: 10px;
+      }
       .project-grid {
-        padding-top: 700px;
+        padding-top: 600px;
       }
     }
 
@@ -38,19 +41,32 @@
 
     @media only screen and (max-width: 800px) {
       .project-grid {
-        padding-top: 600px;
+        padding-top: 500px;
       }
     }
 
     @media only screen and (max-width: 650px) {
+      .project-intro-right {
+        margin-left: 20px;
+      }
       .title {
         margin-top: 150px !important;
       }
     }
 
+    @media only screen and (max-width: 430px) {
+      .project-intro-right {
+        margin-left: 15px;
+      }
+    }
+
     @media only screen and (max-width: 350px) {
+      .project-intro-right {
+        margin-left: 8px;
+      }
       .project-grid {
         grid-gap: 12.5px;
+        padding-top: 600px;
       }
     }
 
