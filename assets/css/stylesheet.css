@@ -1046,7 +1046,7 @@ footer.mobile-footer {
     .container-date .container-date-details {
       width: 280px; }
       .container-date .container-date-details .text-date-time {
-        letter-spacing: 6.1px; }
+        letter-spacing: 4.95px; }
       .container-date .container-date-details .text-date-location {
         letter-spacing: 1.75px; }
 
@@ -1178,7 +1178,7 @@ footer.mobile-footer {
     .container-date .container-date-details {
       top: 230px; }
       .container-date .container-date-details .text-date-time {
-        letter-spacing: 5.4px;
+        letter-spacing: 4.2px;
         left: 10px; }
       .container-date .container-date-details .text-date-location {
         top: 30px;
